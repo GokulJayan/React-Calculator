@@ -2,6 +2,15 @@ import React, { useState } from 'react'
 import './Calculator.css'
 
 function Calculator() {
+  
+  const [N1,setN1]=useState(0)
+  const [N2,setN2]=useState(0)
+  const [op,setOp]=useState("Add")
+  const [res,setRes]=useState(0)
+  const [col1,setCol1]=useState('#f94828')
+  const [col2,setCol2]=useState('#f8cec7')
+  const [col3,setCol3]=useState('#fc7760')
+  
   const Calculate=()=>{
     if(op=="Add") setRes(N1+N2)
     else if(op=="Subtract") setRes(N1-N2)
@@ -33,15 +42,6 @@ function Calculator() {
       setCol1('#f08011'); setCol2('#fcd8b3'); setCol3('#eb9c4d')
     }
   }
-
-  const [N1,setN1]=useState(0)
-  const [N2,setN2]=useState(0)
-  const [op,setOp]=useState("Add")
-  const [res,setRes]=useState(0)
-  const [col1,setCol1]=useState('#f94828')
-  const [col2,setCol2]=useState('#f8cec7')
-  const [col3,setCol3]=useState('#fc7760')
-
 
   return (
     <div style={{background: col1}} className="calculator">
