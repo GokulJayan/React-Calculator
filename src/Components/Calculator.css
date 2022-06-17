@@ -1,7 +1,6 @@
   * {
     font-family: sans-serif;
     text-align: center;
-    /* background:#f94828;*/
     margin-top: 40px;
     color: #eee7ff;
   }
@@ -24,8 +23,6 @@
     width: 15%;
     padding: 10px;
     text-align: center;
-    background: #f8cec7;
-    color: 	#f94828;
   }
 
   
@@ -57,9 +54,7 @@
 
   select{
     font-size: 40px;
-    background: #fc7760;
     border: none;
-    color: #d7cbf7;
     border-radius: 9px;
     padding-left: 3px;
     padding-right:5px;
