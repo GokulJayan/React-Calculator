@@ -20,4 +20,4 @@
 
 5. Exception handling for division
 
-![image](https://user-images.githubusercontent.com/72083631/174258578-2607dcbc-3042-4f22-a16f-74ea0e0f7117.png)
+![image](https://user-images.githubusercontent.com/72083631/174305117-c3f9f203-b965-4c5a-8cde-e8be67516b66.png)
