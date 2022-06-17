@@ -1,15 +1,15 @@
   * {
     font-family: sans-serif;
     text-align: center;
-    /* background:#f94828;*/
-    margin-top: 40px;
     color: #eee7ff;
+    margin-top: 26px;
   }
 
   .calculator{
-    margin:auto;
-    border-radius: 10px;
-    width:80%;
+    margin: auto;
+    width: 58%;
+    border-style:dotted;
+    border-radius: 18px;
     padding-top:1px;
   }
 
@@ -18,14 +18,13 @@
   }
   
   input {
+    margin-top: 15px;
     font-size: 80px;
     border-radius: 10px;
     border: none;
-    width: 15%;
+    width: 25%;
     padding: 10px;
     text-align: center;
-    background: #f8cec7;
-    color: 	#f94828;
   }
 
   
@@ -56,10 +55,11 @@
   }
 
   select{
+    width: 10%;
+    margin-top: 40px;
+    margin-bottom: 12px;
     font-size: 40px;
-    background: #fc7760;
     border: none;
-    color: #d7cbf7;
     border-radius: 9px;
     padding-left: 3px;
     padding-right:5px;

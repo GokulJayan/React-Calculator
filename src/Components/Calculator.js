@@ -2,6 +2,15 @@ import React, { useState } from 'react'
 import './Calculator.css'
 
 function Calculator() {
+
+  const [N1,setN1]=useState(0)
+  const [N2,setN2]=useState(0)
+  const [op,setOp]=useState("Add")
+  const [res,setRes]=useState(0)
+  const [col1,setCol1]=useState('#f94828')
+  const [col2,setCol2]=useState('#f8cec7')
+  const [col3,setCol3]=useState('#fc7760')
+
   const Calculate=()=>{
     if(op=="Add") setRes(N1+N2)
     else if(op=="Subtract") setRes(N1-N2)
@@ -34,18 +43,9 @@ function Calculator() {
     }
   }
 
-  const [N1,setN1]=useState(0)
-  const [N2,setN2]=useState(0)
-  const [op,setOp]=useState("Add")
-  const [res,setRes]=useState(0)
-  const [col1,setCol1]=useState('#f94828')
-  const [col2,setCol2]=useState('#f8cec7')
-  const [col3,setCol3]=useState('#fc7760')
-
-
   return (
-    <div style={{background: col1}} className="calculator">
-      <div>
+    <div style={{background: col1, borderColor:col1}} className="calculator">
+      <div style={{background: col1}}>
         <select style={{background: col3}} onChange={e=>setOperator(e)} name="operation" id="operations">
           <option value="Add" >+</option>
           <option value="Subtract" >−</option>
@@ -54,16 +54,15 @@ function Calculator() {
         </select>
       </div>
 
-      <div className='input-values'>
-        <input style={{color: 	col1, background: col2}} value={N1} placeholder="0" type="number" onChange={e=>setN1(parseInt(e.target.value))}/>
-        <input style={{color: 	col1, background: col2}} value={N2} placeholder="0" type="number" onChange={e=>setN2(parseInt(e.target.value))}/>
+      <div style={{background: col1}} className='input-values'>
+        <input style={{color: col1, background: col2}} value={N1} placeholder="0" type="number" onChange={e=>setN1(parseInt(e.target.value))}/>
+        <input style={{color: col1, background: col2}} value={N2} placeholder="0" type="number" onChange={e=>setN2(parseInt(e.target.value))}/>
       </div>
 
       <button style={{background: col3}} onClick={Calculate}>{op}</button>
       <button style={{background: col3}} className='ml-4' onClick={Reset}>Reset</button>
       
-      <h2>{res}</h2>
-            
+      <h2 style={{background: col1, maxHeight:"9cm"}}>{res}</h2> 
     </div>
   )
 }
