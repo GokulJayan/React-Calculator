@@ -1,4 +1,4 @@
-Website: https://calculator-calgon-app.netlify.app/
+Website: https://reactkjcalculator.netlify.app/
 
 
 1. Addition
